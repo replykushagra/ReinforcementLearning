@@ -4,9 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
-
-import reinforcement.qlearning.PolicyBean;
-
 public class QLearning {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -16,7 +13,7 @@ public class QLearning {
 		/******************************************** enter states *************************************/
 		//System.out.println("Enter the number of states in the form of rows and columns");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		numberOfRows = 3;
+		numberOfRows =3;
 		numberOfColumns=4;
 		double [][] matrix=new double[numberOfRows][numberOfColumns];
 		for(int i=0;i<numberOfRows;i++){
